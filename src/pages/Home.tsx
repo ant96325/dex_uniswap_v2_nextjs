@@ -8,8 +8,6 @@ import {ethers} from 'ethers';
 import { useAccount, useWalletClient } from 'wagmi'
 import {useEthersProvider, useEthersSigner} from '../utils/ethers'
 import { factoryAddress, routerAddress, token1Address, token2Address, ownerAddress} from '../utils/contracts-config'
-import { LoadingOutlined } from '@ant-design/icons'
-import { Spin } from 'antd'
 import IUniswapV2Factory from '@uniswap/v2-core/build/IUniswapV2Factory.json'
 import IUniswapV2Router02 from '@uniswap/v2-periphery/build/IUniswapV2Router02.json'
 import liquidityABI from '../utils/abi/liquidity.json';
@@ -74,7 +72,7 @@ const Home : React.FC = () => {
                 <span className="">fee.</span>
             </div>
             
-            <Spin spinning={loading} >
+            
                 <div className="bg-neutral-950 flex flex-col p-[6px] rounded-[20px] gap-y-2 relative m-auto">
                     <div className="group flex flex-col gap-y-2 relative">
                         <div className="bg-neutral-900 bg-opacity-55 px-3 py-6 rounded-[15px] flex flex-col">
@@ -127,7 +125,7 @@ const Home : React.FC = () => {
                         </div>
                     }
                 </div>
-            </Spin>
+            
             
             <div className="text-[20px] flex flex-col text-neutral-500 justify-center items-center">
                 <span>Trade your tokens with minimal fees</span> 

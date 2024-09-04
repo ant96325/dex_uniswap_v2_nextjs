@@ -1,5 +1,5 @@
 /** @type {import('next').NextConfig} */
-const withAntdLess = require('next-plugin-antd-less');
+// const withAntdLess = require('next-plugin-antd-less');
 // const withTM = require('next-transpile-modules')([
 //   'react-financial-charts',
 //   '@react-financial-charts/annotations', // Add this if you're using annotations

@@ -9,7 +9,6 @@ import {ethers} from 'ethers';
 import { useAccount, useWalletClient } from 'wagmi'
 import {useEthersProvider, useEthersSigner} from '../../utils/ethers'
 import { factoryAddress, routerAddress, token1Address, token2Address, ownerAddress} from '../../utils/contracts-config'
-import { Spin } from 'antd'
 import IUniswapV2Factory from '@uniswap/v2-core/build/IUniswapV2Factory.json'
 import IUniswapV2Router02 from '@uniswap/v2-periphery/build/IUniswapV2Router02.json'
 import liquidityABI from '../../utils/abi/liquidity.json';
